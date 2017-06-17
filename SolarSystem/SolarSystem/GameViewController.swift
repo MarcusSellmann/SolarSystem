@@ -44,7 +44,7 @@ class GameViewController: UIViewController {
         let ship = scene.rootNode.childNode(withName: "earth", recursively: true)!
         
         // animate the 3d object
-        ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
+        ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 0.5, z: 0, duration: 1)))
         
         // retrieve the SCNView
         let scnView = self.view as! SCNView
